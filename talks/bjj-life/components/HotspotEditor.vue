@@ -275,10 +275,10 @@ function copyCode() {
       label
   }));
 
-  // Determine the image source path for the output, prepending '/images/'
+  // Determine the image source path for the output
   const outputImageSrc = imageFilename.value
-    ? `/images/${imageFilename.value}` // Prepend '/images/' if filename exists
-    : '/images/image.jpg';          // Use a default fallback path if no filename
+    ? `./${imageFilename.value}` // Prepend './' if filename exists
+    : './image.jpg';          // Use a default fallback path if no filename
 
   // Generate the code snippet using the prefixed filename
   // (Replace Hotspot with your actual display component name if different)

@@ -4,13 +4,13 @@
       <div class="card" :class="{ flipped }">
         <div class="front" :style="currentCardStyle">
           <div class="flip-indicator">
-            FLIP <mdi-sync class="animate-pulse" />
+            FLIP <i-iconify-icon icon="mdi:sync" class="animate-pulse w-5 h-5 inline" />
           </div>
           <h2>{{ currentCard.front }}</h2>
         </div>
         <div class="back" :style="currentCardStyle">
           <div class="flip-indicator">
-            FLIP <mdi-sync class="animate-pulse" />
+            FLIP <i-iconify-icon icon="mdi:sync" class="animate-pulse w-5 h-5 inline" />
           </div>
           <h2>{{ currentCard.back }}</h2>
         </div>
