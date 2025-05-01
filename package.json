@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "my-presentations",
   "type": "module",
   "private": true,
   "scripts": {
@@ -12,6 +12,30 @@
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "vue": "^3.4.33",
-    "vuedraggable": "^4.1.0"
+    "vuedraggable": "^4.1.0",
+    "@iconify/collections": "latest",
+    "@iconify/json": "latest",
+    "@slidev/cli": "latest",
+    "@slidev/client": "latest",
+    "@slidev/theme-default": "latest",
+    "@types/node": "latest",
+    "@types/prompts": "latest",
+    "@types/seedrandom": "latest",
+    "chroma-js": "latest",
+    "fast-glob": "latest",
+    "markdown-it-magic-link": "latest",
+    "playwright-chromium": "latest",
+    "prettier-plugin-slidev": "latest",
+    "prompts": "latest",
+    "rimraf": "latest",
+    "seedrandom": "latest",
+    "slidev-addon-graph": "latest",
+    "typescript": "latest",
+    "unocss": "latest",
+    "uqr": "latest",
+    "vis-data": "latest",
+    "vis-network": "latest",
+    "vue-router": "latest",
+    "vue-tsc": "latest"
   }
 }
