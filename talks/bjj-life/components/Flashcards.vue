@@ -10,13 +10,13 @@
           <div class="card" :class="{ flipped: flipped[index] }" :style="getCardStyle(index)">
             <div class="front">
               <div class="flip-indicator">
-                FLIP <mdi-sync class="animate-pulse" />
+                FLIP <i-iconify-icon icon="mdi:sync" class="animate-pulse w-5 h-5 inline" />
               </div>
               <h2 class="card-text">{{ card.front }}</h2>
             </div>
             <div class="back">
               <div class="flip-indicator">
-                FLIP <mdi-sync class="animate-pulse" />
+                FLIP <i-iconify-icon icon="mdi:sync" class="animate-pulse w-5 h-5 inline" />
               </div>
               <h2 class="card-text">{{ card.back }}</h2>
             </div>
@@ -38,6 +38,7 @@
   
   <script setup>
   import { ref, computed, watch } from 'vue'
+  import Icon from '@iconify/vue'
   
   const pastelColors = [
     '#FFDFD3', '#D4F0F0', '#F8DFF0', '#D8E8D0',
