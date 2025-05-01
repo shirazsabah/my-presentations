@@ -33,7 +33,7 @@
 
 <script setup>
 import { ref, computed, watch } from 'vue'
-import Icon from '@iconify/vue'
+import { Icon } from '@iconify/vue';
 
 // --- Pastel Background Colors ---
 const pastelColors = [
