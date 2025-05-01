@@ -10,7 +10,7 @@
         </div>
         <div class="back" :style="currentCardStyle">
           <div class="flip-indicator">
-            FLIP <mdi-sync class="animate-pulse" />
+            FLIP <Icon icon="mdi:sync" class="animate-pulse" />
           </div>
           <h2>{{ currentCard.back }}</h2>
         </div>
