@@ -10,13 +10,13 @@
           <div class="card" :class="{ flipped: flipped[index] }" :style="getCardStyle(index)">
             <div class="front">
               <div class="flip-indicator">
-                FLIP <i-iconify-icon icon="mdi:sync" class="animate-pulse w-5 h-5 inline" /
+                FLIP <i-iconify-icon icon="mdi:sync" class="animate-pulse w-5 h-5 inline" />
               </div>
               <h2 class="card-text">{{ card.front }}</h2>
             </div>
             <div class="back">
               <div class="flip-indicator">
-                FLIP <i-iconify-icon icon="mdi:sync" class="animate-pulse w-5 h-5 inline" /
+                FLIP <i-iconify-icon icon="mdi:sync" class="animate-pulse w-5 h-5 inline" />
               </div>
               <h2 class="card-text">{{ card.back }}</h2>
             </div>
