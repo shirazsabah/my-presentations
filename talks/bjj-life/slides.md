@@ -141,7 +141,7 @@ Need to include a draw and then click to reveal
 ## Hotspot game
 
 <Hotspot
-  imageSrc="/clot.png"
+  imageSrc="./clot.png"
   :hotspots="[
     { x: 30, y: 50, width: 30, height: 30, label: 'RBC' },
     { x: 60, y: 60, width: 25, height: 25, label: 'PLT' }
@@ -159,7 +159,7 @@ Need to include a draw and then click to reveal
 ## Test new hotspots
 
 <Hotspot
-  imageSrc="/seesaw.png" :hotspots='[
+  imageSrc="./seesaw.png" :hotspots='[
   {
     "x": 13.9,
     "y": 37.79,
