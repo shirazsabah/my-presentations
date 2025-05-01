@@ -32,7 +32,23 @@ jobs:
         run: nci
 
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/
+        run: |
+          mkdir -p all-dist
+          
+          for dir in talks/*/ ; do
+            talk_name=$(basename "$dir")
+            echo "🔧 Building $talk_name..."
+
+            cd "$dir"
+            npm install
+
+            npx slidev build --base /${{ github.event.repository.name }}/talks/$talk_name/
+
+            mkdir -p ../../all-dist/talks/$talk_name
+            cp -r dist/* ../../all-dist/talks/$talk_name/
+
+            cd ../../
+          done
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
