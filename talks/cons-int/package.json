@@ -1,0 +1,27 @@
+{
+  "name": "cons-int",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export",
+    "export-pdf": "slidev export --dark --with-clicks true --timeout 60000",
+    "export-pdf-nc": "slidev export --dark --with-clicks false --timeout 60000",
+    "export-pptx": "slidev export --dark --with-clicks true --timeout 60000 --format pptx"
+  },
+  "dependencies": {
+    "@react-pdf-viewer/core": "^3.0.0",
+    "@react-pdf-viewer/highlight": "^3.0.0",
+    "@slidev/cli": "^0.49.16",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "pdfjs-dist": "^3.4.120",
+    "react-pdf": "^9.1.0",
+    "vue": "^3.4.31",
+    "vue-flux": "^7.0.0-beta.6"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.45.3"
+  }
+}
