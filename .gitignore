@@ -1,0 +1,36 @@
+node_modules
+.DS_Store
+dist
+*.local
+.vite-inspect
+.remote-assets
+components.d.ts
+
+# Node.js dependencies
+node_modules/
+talks/**/node_modules/
+
+# Local build output
+dist/
+talks/**/dist/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Slidev cache
+.slidev/
+talks/**/.slidev/
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
