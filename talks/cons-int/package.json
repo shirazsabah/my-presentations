@@ -16,6 +16,7 @@
     "@slidev/cli": "^0.49.16",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
+    "@types/seedrandom": "^3.0.8",
     "pdfjs-dist": "^3.4.120",
     "react-pdf": "^9.1.0",
     "vue": "^3.4.31",
