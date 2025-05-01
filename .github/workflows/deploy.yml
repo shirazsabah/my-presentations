@@ -41,7 +41,8 @@ jobs:
             cd "$dir"
             nci  # Use nci instead of npm install
             npx slidev build --base "/${{ github.event.repository.name }}/$talk_name/"
-            cp -r dist/* ../../public/${talk_name}/
+            mkdir -p "../../public/$talk_name" # Create the target directory
+            cp -r dist/* "../../public/$talk_name/"
             cd ../../
           done
 
