@@ -4,7 +4,7 @@
       <div class="card" :class="{ flipped }">
         <div class="front" :style="currentCardStyle">
           <div class="flip-indicator">
-            FLIP <mdi-sync class="animate-pulse" />
+            FLIP <Icon icon="mdi:sync" class="animate-pulse" />
           </div>
           <h2>{{ currentCard.front }}</h2>
         </div>
