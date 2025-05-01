@@ -1,13 +1,17 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import Components from 'unplugin-vue-components/vite'
+import seedrandom from 'seedrandom'
+import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 
 export default defineConfig({
-  optimizeDeps: {
-    include: [
-      'seedrandom',
-      '@formkit/auto-animate/vue'
-    ],
-    entries: ['talks/**/*.vue']  // optional: helps Vite scan your talk files
-  },
-  // Optional for GitHub Pages if you're deploying to a subfolder:
-  base: '/my-presentations/',
-});
+  plugins: [
+    Components({
+      resolvers: [IconsResolver({ prefix: 'Icon' })], // optional: allows <IconMdiShuffleVariant />
+    }),
+    Icons({
+      autoInstall: true, // installs icon sets as needed
+    }),
+  ],
+})
